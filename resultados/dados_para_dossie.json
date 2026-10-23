@@ -1,0 +1,273 @@
+{
+ "testes": [
+  {
+   "teste": "T-01",
+   "descricao": "Conciliacao da base com a Nota 14 e o balanco (R$ 50.492.473 mil)",
+   "classificacao": "Simulado para fins didaticos",
+   "resultado": "diferenca total = R$ 0.000 mil",
+   "observacao": "Zero por construcao (calibracao); ver dossie, secao 6"
+  },
+  {
+   "teste": "T-02",
+   "descricao": "Integridade (nulos, ids, VL = custo - amortizacao, sinais, datas)",
+   "classificacao": "Simulado para fins didaticos",
+   "resultado": "{\"nulos\": 0, \"id_duplicado\": 0, \"vl_difere\": 0, \"vl_negativo\": 0, \"amort_maior_custo\": 0, \"custo_nao_positivo\": 0, \"data_registro_futura\": 0}",
+   "observacao": ""
+  },
+  {
+   "teste": "T-03",
+   "descricao": "Duplicidade por ordem, tipo, municipio, custo e data de conclusao",
+   "classificacao": "Simulado para fins didaticos",
+   "resultado": "126 unidades; VL R$ 12,546 mil",
+   "observacao": ""
+  },
+  {
+   "teste": "T-04",
+   "descricao": "Corte: conclusao da obra apos 31/12/2025 e registro ate 31/12/2025",
+   "classificacao": "Simulado para fins didaticos",
+   "resultado": "45 unidades; VL R$ 61,000 mil",
+   "observacao": "311 obras concluidas em 18-31/12 listadas para revisao e consideradas regulares"
+  },
+  {
+   "teste": "T-05",
+   "descricao": "Classificacao: palavras de manutencao na descricao (estagio 1 = automatico; estagio 2 = apos leitura do texto)",
+   "classificacao": "Simulado para fins didaticos",
+   "resultado": "estagio 1: 360 unidades; estagio 2: 160 unidades, custo R$ 38,000 mil",
+   "observacao": "Estagio 1 inclui falsos positivos (ampliacao de capacidade apos manutencao)"
+  },
+  {
+   "teste": "T-06",
+   "descricao": "Vida util registrada acima da padrao do tipo (> 5%)",
+   "classificacao": "Simulado para fins didaticos",
+   "resultado": "1400 unidades; efeito estimado R$ 24,088 mil em amortizacao a menor",
+   "observacao": "12 municipios no lote"
+  },
+  {
+   "teste": "T-07",
+   "descricao": "Lancamentos manuais, 20-31/12/2025, por usuarios privilegiados (criterios i, ii e iii do PT 240)",
+   "classificacao": "Simulado para fins didaticos",
+   "resultado": "436 unidades; VL R$ 128,370 mil",
+   "observacao": "Indicador de risco; nao e erro por si so"
+  },
+  {
+   "teste": "T-08",
+   "descricao": "Primeiro digito do custo (Benford), informativo",
+   "classificacao": "Simulado para fins didaticos",
+   "resultado": "qui-quadrado = 8,336 (8 gl); maior desvio = 3.23 p.p.",
+   "observacao": "Valores sinteticos seguem lognormal; usar so como exploracao"
+  },
+  {
+   "teste": "T-09",
+   "descricao": "Amortizacao do exercicio da base x Nota 14 (R$ 2.161.112 mil)",
+   "classificacao": "Simulado para fins didaticos",
+   "resultado": "base R$ 2,158,862 mil; diferenca -2,250 mil (-0.10%)",
+   "observacao": "limite de investigacao R$ 102,391 mil"
+  }
+ ],
+ "comparacao": [
+  {
+   "codigo": "S-01",
+   "teste": "T-04",
+   "inseridas": 45,
+   "identificadas": 45,
+   "verdadeiros_positivos": 45,
+   "falsos_positivos": 0,
+   "falsos_negativos": 0,
+   "precisao": 1.0,
+   "cobertura": 1.0,
+   "distorcao_inserida_mil": 61000.0,
+   "distorcao_identificada_mil": 61000.0,
+   "falsos_positivos_estagio1": 0.0
+  },
+  {
+   "codigo": "S-02",
+   "teste": "T-05 (estagio 2)",
+   "inseridas": 160,
+   "identificadas": 160,
+   "verdadeiros_positivos": 160,
+   "falsos_positivos": 0,
+   "falsos_negativos": 0,
+   "precisao": 1.0,
+   "cobertura": 1.0,
+   "distorcao_inserida_mil": 38000.0,
+   "distorcao_identificada_mil": 38000.0,
+   "falsos_positivos_estagio1": 200.0
+  },
+  {
+   "codigo": "S-03",
+   "teste": "T-06",
+   "inseridas": 1400,
+   "identificadas": 1400,
+   "verdadeiros_positivos": 1400,
+   "falsos_positivos": 0,
+   "falsos_negativos": 0,
+   "precisao": 1.0,
+   "cobertura": 1.0,
+   "distorcao_inserida_mil": 24088.1,
+   "distorcao_identificada_mil": 24088.1,
+   "falsos_positivos_estagio1": 0.0
+  },
+  {
+   "codigo": "S-04",
+   "teste": "T-03",
+   "inseridas": 126,
+   "identificadas": 126,
+   "verdadeiros_positivos": 126,
+   "falsos_positivos": 0,
+   "falsos_negativos": 0,
+   "precisao": 1.0,
+   "cobertura": 1.0,
+   "distorcao_inserida_mil": 12546.5,
+   "distorcao_identificada_mil": 12546.5,
+   "falsos_positivos_estagio1": 0.0
+  }
+ ],
+ "mus": {
+  "populacao_mil": 50492473.0,
+  "n_itens_populacao": 520126,
+  "tolerable_mil": 409565.0,
+  "confianca": 0.95,
+  "fator_confianca": 3.0,
+  "fator_expansao": 1.6,
+  "distorcao_esperada_mil": 40000.0,
+  "intervalo_mil": 115188.333,
+  "n_esperado": 438.3,
+  "inicio_aleatorio_mil": 18973.929,
+  "itens_chave": 1,
+  "itens_mus": 438,
+  "itens_total": 439,
+  "itens_com_distorcao": 3,
+  "distorcao_total_nos_itens_mil": 81.573,
+  "distorcao_itens_chave_mil": 0.0,
+  "taints": [
+   0.09264,
+   0.08745,
+   0.05593
+  ],
+  "distorcao_projetada_mil": 27187.2,
+  "precisao_basica_mil": 345565.0,
+  "limite_superior_stringer_mil": 362072.3,
+  "conclusao_amostral": "LUS abaixo da distorcao tolerável",
+  "distorcao_real_inserida_mil": 135634.6,
+  "inserida_em_itens_amostrados_mil": 81.6
+ },
+ "geracao": {
+  "linhas": 520126,
+  "vl_total_brl": 50492473000.0,
+  "lam": {
+   "URAE1": 1.2992,
+   "COMPROMISSOS": 5.5179,
+   "SOFTWARE": 2.3637,
+   "DIREITO_USO": 4.4694,
+   "OUTROS": 3.0144,
+   "NOVOS": 2.4113
+  },
+  "escala_vida": 1.3523,
+  "amort_ex_total_brl": 2158862316.4500003,
+  "erros": {
+   "S-01": {
+    "n": 45,
+    "distorcao_brl": 61000000.03999999
+   },
+   "S-02": {
+    "n": 160,
+    "distorcao_brl": 38000000.03
+   },
+   "S-03": {
+    "n": 1400,
+    "distorcao_brl": 24088077.83
+   },
+   "S-04": {
+    "n": 126,
+    "distorcao_brl": 12546485.030000001
+   }
+  },
+  "segundos": 35.6
+ },
+ "tot": {
+  "inserida_total_mil": 135634.6,
+  "identificada_total_mil": 135634.6,
+  "indicador_T07_unidades": 436,
+  "indicador_T07_dentro_dos_erros": 36
+ },
+ "conc": [
+  {
+   "classe": "Contratos de Concessao URAE-1",
+   "custo_base_mil": 69281545.0,
+   "custo_nota14_mil": 69281545,
+   "amort_base_mil": 23335074.0,
+   "amort_nota14_mil": 23335074,
+   "vl_base_mil": 45946471.0,
+   "vl_nota14_mil": 45946471,
+   "dif_vl_mil": 0.0
+  },
+  {
+   "classe": "Compromissos de Contratos",
+   "custo_base_mil": 4437857.0,
+   "custo_nota14_mil": 4437857,
+   "amort_base_mil": 707736.0,
+   "amort_nota14_mil": 707736,
+   "vl_base_mil": 3730121.0,
+   "vl_nota14_mil": 3730121,
+   "dif_vl_mil": 0.0
+  },
+  {
+   "classe": "Licenca de uso de software",
+   "custo_base_mil": 1696773.0,
+   "custo_nota14_mil": 1696773,
+   "amort_base_mil": 1145671.0,
+   "amort_nota14_mil": 1145671,
+   "vl_base_mil": 551102.0,
+   "vl_nota14_mil": 551102,
+   "dif_vl_mil": 0.0
+  },
+  {
+   "classe": "Direito de uso - Outros ativos",
+   "custo_base_mil": 240646.0,
+   "custo_nota14_mil": 240646,
+   "amort_base_mil": 188681.0,
+   "amort_nota14_mil": 188681,
+   "vl_base_mil": 51965.0,
+   "vl_nota14_mil": 51965,
+   "dif_vl_mil": 0.0
+  },
+  {
+   "classe": "Contratos de concessao - outros",
+   "custo_base_mil": 135470.0,
+   "custo_nota14_mil": 135470,
+   "amort_base_mil": 60381.0,
+   "amort_nota14_mil": 60381,
+   "vl_base_mil": 75089.0,
+   "vl_nota14_mil": 75089,
+   "dif_vl_mil": 0.0
+  },
+  {
+   "classe": "Contratos de concessao - novos contratos",
+   "custo_base_mil": 148000.0,
+   "custo_nota14_mil": 148000,
+   "amort_base_mil": 10275.0,
+   "amort_nota14_mil": 10275,
+   "vl_base_mil": 137725.0,
+   "vl_nota14_mil": 137725,
+   "dif_vl_mil": 0.0
+  },
+  {
+   "classe": "TOTAL",
+   "custo_base_mil": 75940291.0,
+   "custo_nota14_mil": 75940291,
+   "amort_base_mil": 25447818.0,
+   "amort_nota14_mil": 25447818,
+   "vl_base_mil": 50492473.0,
+   "vl_nota14_mil": 50492473,
+   "dif_vl_mil": 0.0
+  }
+ ],
+ "linhas_classe": {
+  "Contratos de Concessao URAE-1": 450126,
+  "Compromissos de Contratos": 30000,
+  "Licenca de uso de software": 20000,
+  "Direito de uso - Outros ativos": 10000,
+  "Contratos de concessao - novos contratos": 5000,
+  "Contratos de concessao - outros": 5000
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "populacao_mil": 50492473.0,
+ "n_itens_populacao": 520126,
+ "tolerable_mil": 409565.0,
+ "confianca": 0.95,
+ "fator_confianca": 3.0,
+ "fator_expansao": 1.6,
+ "distorcao_esperada_mil": 40000.0,
+ "intervalo_mil": 115188.333,
+ "n_esperado": 438.3,
+ "inicio_aleatorio_mil": 18973.929,
+ "itens_chave": 1,
+ "itens_mus": 438,
+ "itens_total": 439,
+ "itens_com_distorcao": 3,
+ "distorcao_total_nos_itens_mil": 81.573,
+ "distorcao_itens_chave_mil": 0.0,
+ "taints": [
+  0.09264,
+  0.08745,
+  0.05593
+ ],
+ "distorcao_projetada_mil": 27187.2,
+ "precisao_basica_mil": 345565.0,
+ "limite_superior_stringer_mil": 362072.3,
+ "conclusao_amostral": "LUS abaixo da distorcao tolerável",
+ "distorcao_real_inserida_mil": 135634.6,
+ "inserida_em_itens_amostrados_mil": 81.6
+}

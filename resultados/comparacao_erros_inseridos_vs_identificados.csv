@@ -1,0 +1,5 @@
+codigo,teste,inseridas,identificadas,verdadeiros_positivos,falsos_positivos,falsos_negativos,precisao,cobertura,distorcao_inserida_mil,distorcao_identificada_mil,falsos_positivos_estagio1
+S-01,T-04,45,45,45,0,0,1.0,1.0,61000.0,61000.0,
+S-02,T-05 (estagio 2),160,160,160,0,0,1.0,1.0,38000.0,38000.0,200.0
+S-03,T-06,1400,1400,1400,0,0,1.0,1.0,24088.1,24088.1,
+S-04,T-03,126,126,126,0,0,1.0,1.0,12546.5,12546.5,

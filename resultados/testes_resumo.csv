@@ -1,0 +1,10 @@
+teste,descricao,classificacao,resultado,observacao
+T-01,Conciliacao da base com a Nota 14 e o balanco (R$ 50.492.473 mil),Simulado para fins didaticos,diferenca total = R$ 0.000 mil,"Zero por construcao (calibracao); ver dossie, secao 6"
+T-02,"Integridade (nulos, ids, VL = custo - amortizacao, sinais, datas)",Simulado para fins didaticos,"{""nulos"": 0, ""id_duplicado"": 0, ""vl_difere"": 0, ""vl_negativo"": 0, ""amort_maior_custo"": 0, ""custo_nao_positivo"": 0, ""data_registro_futura"": 0}",
+T-03,"Duplicidade por ordem, tipo, municipio, custo e data de conclusao",Simulado para fins didaticos,"126 unidades; VL R$ 12,546 mil",
+T-04,Corte: conclusao da obra apos 31/12/2025 e registro ate 31/12/2025,Simulado para fins didaticos,"45 unidades; VL R$ 61,000 mil",311 obras concluidas em 18-31/12 listadas para revisao e consideradas regulares
+T-05,Classificacao: palavras de manutencao na descricao (estagio 1 = automatico; estagio 2 = apos leitura do texto),Simulado para fins didaticos,"estagio 1: 360 unidades; estagio 2: 160 unidades, custo R$ 38,000 mil",Estagio 1 inclui falsos positivos (ampliacao de capacidade apos manutencao)
+T-06,Vida util registrada acima da padrao do tipo (> 5%),Simulado para fins didaticos,"1400 unidades; efeito estimado R$ 24,088 mil em amortizacao a menor",12 municipios no lote
+T-07,"Lancamentos manuais, 20-31/12/2025, por usuarios privilegiados (criterios i, ii e iii do PT 240)",Simulado para fins didaticos,"436 unidades; VL R$ 128,370 mil",Indicador de risco; nao e erro por si so
+T-08,"Primeiro digito do custo (Benford), informativo",Simulado para fins didaticos,"qui-quadrado = 8,336 (8 gl); maior desvio = 3.23 p.p.",Valores sinteticos seguem lognormal; usar so como exploracao
+T-09,Amortizacao do exercicio da base x Nota 14 (R$ 2.161.112 mil),Simulado para fins didaticos,"base R$ 2,158,862 mil; diferenca -2,250 mil (-0.10%)","limite de investigacao R$ 102,391 mil"

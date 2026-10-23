@@ -1,0 +1,33 @@
+{
+ "linhas": 520126,
+ "vl_total_brl": 50492473000.0,
+ "lam": {
+  "URAE1": 1.2992,
+  "COMPROMISSOS": 5.5179,
+  "SOFTWARE": 2.3637,
+  "DIREITO_USO": 4.4694,
+  "OUTROS": 3.0144,
+  "NOVOS": 2.4113
+ },
+ "escala_vida": 1.3523,
+ "amort_ex_total_brl": 2158862316.4500003,
+ "erros": {
+  "S-01": {
+   "n": 45,
+   "distorcao_brl": 61000000.03999999
+  },
+  "S-02": {
+   "n": 160,
+   "distorcao_brl": 38000000.03
+  },
+  "S-03": {
+   "n": 1400,
+   "distorcao_brl": 24088077.83
+  },
+  "S-04": {
+   "n": 126,
+   "distorcao_brl": 12546485.030000001
+  }
+ },
+ "segundos": 51.5
+}

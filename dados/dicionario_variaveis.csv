@@ -1,0 +1,18 @@
+variavel,tipo,descricao
+id_unidade,texto,Identificador sintetico da unidade patrimonial (U0000001 em diante)
+id_ordem_imobilizacao,texto,Ordem de imobilizacao que agrupa unidades (OI-nnnnnnn)
+classe_contabil,texto,Classe do intangivel conforme a Nota 14 da DFP 2025 (p. 72)
+tipo_ativo,texto,"Tipo da unidade (REDE_AGUA, REDE_ESGOTO, ETA, ETE, LICENCA_SOFTWARE etc.)"
+municipio_cod,texto,Codigo sintetico do municipio (MUN-001 a MUN-375) ou SEDE
+fornecedor_obra_cod,texto,Codigo sintetico do fornecedor (F-0001 a F-1200) ou N/A
+descricao_gasto,texto,Descricao do gasto capitalizado
+data_conclusao_obra,data AAAA-MM-DD,Data de conclusao da obra ou de inicio do uso
+data_registro_lancamento,data AAAA-MM-DD,Data do registro contabil no intangivel
+origem_lancamento,categoria,AUTOMATICO_TRANSF_AC ou MANUAL
+usuario_registro,texto,SISTEMA ou USR-001 a USR-080 (USR-001 a USR-005 sao usuarios privilegiados ficticios)
+vida_util_registrada_anos,numero,"Vida util usada na amortizacao, em anos"
+custo_brl,numero (R$),Custo da unidade
+amort_acum_brl,numero (R$),Amortizacao acumulada em 31/12/2025
+valor_liquido_brl,numero (R$),Custo menos amortizacao acumulada
+amort_exercicio_2025_brl,numero (R$),Amortizacao reconhecida em 2025
+origem_dado,texto,Sempre SINTETICO

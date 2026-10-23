@@ -1,0 +1,15 @@
+T-01 | Conciliacao da base com a Nota 14 e o balanco (R$ 50.492.473 mil) | diferenca total = R$ 0.000 mil
+T-02 | Integridade (nulos, ids, VL = custo - amortizacao, sinais, datas) | {"nulos": 0, "id_duplicado": 0, "vl_difere": 0, "vl_negativo": 0, "amort_maior_custo": 0, "custo_nao_positivo": 0, "data_registro_futura": 0}
+T-03 | Duplicidade por ordem, tipo, municipio, custo e data de conclusao | 126 unidades; VL R$ 12,546 mil
+T-04 | Corte: conclusao da obra apos 31/12/2025 e registro ate 31/12/2025 | 45 unidades; VL R$ 61,000 mil
+T-05 | Classificacao: palavras de manutencao na descricao (estagio 1 = automatico; estagio 2 = apos leitura do texto) | estagio 1: 360 unidades; estagio 2: 160 unidades, custo R$ 38,000 mil
+T-06 | Vida util registrada acima da padrao do tipo (> 5%) | 1400 unidades; efeito estimado R$ 24,088 mil em amortizacao a menor
+T-07 | Lancamentos manuais, 20-31/12/2025, por usuarios privilegiados (criterios i, ii e iii do PT 240) | 436 unidades; VL R$ 128,370 mil
+T-08 | Primeiro digito do custo (Benford), informativo | qui-quadrado = 8,336 (8 gl); maior desvio = 3.23 p.p.
+T-09 | Amortizacao do exercicio da base x Nota 14 (R$ 2.161.112 mil) | base R$ 2,158,862 mil; diferenca -2,250 mil (-0.10%)
+  codigo             teste  inseridas  identificadas  verdadeiros_positivos  falsos_positivos  falsos_negativos  precisao  cobertura  distorcao_inserida_mil  distorcao_identificada_mil  falsos_positivos_estagio1
+0   S-01              T-04         45             45                     45                 0                 0       1.0        1.0                 61000.0                     61000.0                        NaN
+1   S-02  T-05 (estagio 2)        160            160                    160                 0                 0       1.0        1.0                 38000.0                     38000.0                      200.0
+2   S-03              T-06       1400           1400                   1400                 0                 0       1.0        1.0                 24088.1                     24088.1                        NaN
+3   S-04              T-03        126            126                    126                 0                 0       1.0        1.0                 12546.5                     12546.5                        NaN
+{'inserida_total_mil': 135634.6, 'identificada_total_mil': 135634.6, 'indicador_T07_unidades': 436, 'indicador_T07_dentro_dos_erros': 36}
