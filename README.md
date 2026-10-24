@@ -91,7 +91,7 @@ python3 04_gerar_planilhas.py    # planilhas/Papeis_de_trabalho_calculos.xlsx
 
 ## Versões das normas e fontes
 
-As versões das NBC TA usadas (consolidado do CFC fornecido pelo professor) estão na seção 1.3 do dossiê. A relação completa de fontes, com endereços, datas de acesso e páginas, está em `fontes/relacao_fontes.md`.
+As versões das NBC TA usadas estão na seção 1.3 do dossiê. A relação completa de fontes, com endereços, datas de acesso e páginas, está em `fontes/relacao_fontes.md`.
 
 ## Limitações
 
